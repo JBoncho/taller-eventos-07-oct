@@ -22,3 +22,20 @@ formulario.addEventListener("submit", (event) => {
     console.log("Apellido:", apellido);
 });
 
+//task3
+
+botonEnlaces.addEventListener("click", () => {
+    const enlaces = document.querySelectorAll("a");
+
+    const total = enlaces.length;
+    const primero = enlaces[0].href;
+    const ultimo = enlaces[total - 1].href;
+
+    alert(
+        `Total enlaces: ${total}\n` +
+        `Primer enlace: ${primero}\n` +
+        `Último enlace: ${ultimo}`
+    );
+});
+
+
